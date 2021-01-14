@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./blocks/content/content.css);
+@import url(./blocks/main/main.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__menu-items/header__menu-items.css);
+@import url(./blocks/header/__menu-item/header__menu-item.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__links/header__links.css);
+@import url(./blocks/header/__link-item/header__link-item.css);
+@import url(./blocks/header/__link-item/_active/header__link-item_active.css);
+
+@import url(./blocks/lead/lead.css);
+@import url(./blocks/lead/__avatar/lead__avatar.css);
+@import url(./blocks/lead/__button/lead__button.css);
+@import url(./blocks/lead/__title-span/lead__title-span.css);
+@import url(./blocks/lead/__title/lead__title.css);
+@import url(./blocks/lead/__description/lead__description.css);
+@import url(./blocks/lead/__contacts/lead__contacts.css);
+@import url(./blocks/lead/__button-link/lead__button-link.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__contact/footer__contact.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+@import url(./blocks/footer/__copyright-span/footer__copyright-span.css);
+
+@import url(./blocks/section/section.css);
+
+@import url(./blocks/social/__link/social__link.css);
+@import url(./blocks/social/_type/_lead/social_type_lead.css);
+
+@import url(./blocks/right-column/right-column.css);
+@import url(./blocks/right-column/_type/_lead/lead__right-column.css);
+@import url(./blocks/right-column/__text/right-column__text.css);
+@import url(./blocks/right-column/_type/_about/right-column_type_about.css);
+@import url(./blocks/right-column/__title/right-column__title.css);
+@import url(./blocks/right-column/__table/right-column__table.css);
+@import url(./blocks/right-column/__table/_type/_advanced/right-column__table_type_advanced.css);
+@import url(./blocks/right-column/__table/_type/_hard/right-column__table_type_hard.css);
+@import url(./blocks/right-column/__table-title/right-column__table-title.css);
+
+@import url(./blocks/left-column/left-column.css);
+@import url(./blocks/left-column/_type/_lead/left-column_type_lead.css);
+@import url(./blocks/left-column/_type/_dark/left-column_type_dark.css);
+@import url(./blocks/left-column/_type/_light/left-column_type_light.css);
+@import url(./blocks/left-column/__title/left-column__title.css);
