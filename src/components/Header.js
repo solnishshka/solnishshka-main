@@ -13,13 +13,13 @@ export default function Header(props) {
             <a className="header__link" href="#skills">НАВЫКИ</a>
           </li>
           <li className="header__menu-item">
-            <a className="header__link" href="#">ОПЫТ</a>
+            <a className="header__link" href="#experience">ОПЫТ РАБОТЫ</a>
           </li>
           <li className="header__menu-item">
-            <a className="header__link" href="#">ОБУЧЕНИЕ</a>
+            <a className="header__link" href="#education">ОБУЧЕНИЕ</a>
           </li>
           <li className="header__menu-item">
-            <a className="header__link" href="#">ПОРТФОЛИО</a>
+            <a className="header__link" href="#portfolio">ПОРТФОЛИО</a>
           </li>
         </ul>
       </nav>

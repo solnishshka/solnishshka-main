@@ -1,7 +1,8 @@
 .lead__title {
-  font-size: 64px;
+  font-size: 62px;
+  font-weight: 500;
   margin: 0;
-  max-width: 650px;
+  max-width: 700px;
   animation: appearance 2s 1 both;
   text-align: start;
 }

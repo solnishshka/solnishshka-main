@@ -1,5 +1,5 @@
 @import url(./vendor/normalize.css);
-@import url(./vendor/fonts/fonts.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 @import url(./blocks/content/content.css);
@@ -40,10 +40,24 @@
 @import url(./blocks/right-column/__table/right-column__table.css);
 @import url(./blocks/right-column/__table/_type/_advanced/right-column__table_type_advanced.css);
 @import url(./blocks/right-column/__table/_type/_hard/right-column__table_type_hard.css);
+@import url(./blocks/right-column/__table/_type/_experience/right-column__table_type_experience.css);
 @import url(./blocks/right-column/__table-title/right-column__table-title.css);
+@import url(./blocks/right-column/__loading-bar/right-column__loading-bar.css);
+@import url(./blocks/right-column/__circle/right-column__circle.css);
+@import url(./blocks/right-column/__line/right-column__line.css);
+@import url(./blocks/right-column/__table-title/_type/right-column__table-title_type_experience.css);
+@import url(./blocks/right-column/__text/_type/_experience/right-column__text_type_experience.css);
+@import url(./blocks/right-column/__table/_type/_education/right-column__table_type_education.css);
+@import url(./blocks/right-column/__table/_type/_portfolio/right-column__table_type_portfolio.css);
+@import url(./blocks/right-column/__table-image/right-column__table-image.css);
+@import url(./blocks/right-column/__link/right-column__link.css);
 
 @import url(./blocks/left-column/left-column.css);
 @import url(./blocks/left-column/_type/_lead/left-column_type_lead.css);
 @import url(./blocks/left-column/_type/_dark/left-column_type_dark.css);
 @import url(./blocks/left-column/_type/_light/left-column_type_light.css);
 @import url(./blocks/left-column/__title/left-column__title.css);
+
+@import url(./blocks/loading/loading.css);
+@import url(./blocks/loading/_type/_50/loading_type_50.css);
+@import url(./blocks/loading/_type/_75/loading_type_75.css);

@@ -1,0 +1,10 @@
+.right-column__table-image{
+    max-width: 350px;
+    max-height: 400px;
+    transition: transform 1s linear;
+}
+
+.right-column__table-image:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

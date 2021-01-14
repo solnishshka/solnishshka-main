@@ -1,0 +1,5 @@
+.right-column__table_type_education{
+    grid-template-columns: 13px 220px 350px;
+    grid-template-rows: repeat(2, 170px);
+    gap: 50px;
+}

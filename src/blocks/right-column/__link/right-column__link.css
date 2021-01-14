@@ -1,0 +1,12 @@
+.right-column__link{
+    text-decoration: none;
+    color: #939393;
+    margin: auto;
+    font-size: 22px;
+    transition: color 1s ease;
+}
+
+.right-column__link:hover{
+    color: #F8BB10;
+    text-decoration: underline;
+}

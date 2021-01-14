@@ -1,0 +1,6 @@
+.right-column__table_type_portfolio {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 400px);
+    column-gap: 70px;
+    row-gap: 60px;
+}

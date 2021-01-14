@@ -1,0 +1,13 @@
+@keyframes loading_50{
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+.loading_type_50{
+    animation: loading_50 1.5s linear 0s 1;
+    max-width: 100px;
+}
