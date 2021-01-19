@@ -1,8 +1,13 @@
+import { useContext } from 'react'
+import { TranslationContext } from '../contexts/translationContext'
+
 export default function Skills(props) {
+  const translation = useContext(TranslationContext)
+
   return (
     <section className="section" id="skills">
       <div className="left-column left-column_color_light">
-        <h2 className="left-column__title">НАВЫКИ</h2>
+        <h2 className="left-column__title">{translation.menu.skills}</h2>
       </div>
       <div className="right-column">
         <h2 className="right-column__title">HARD SKILLS</h2>
@@ -24,7 +29,7 @@ export default function Skills(props) {
             <div className="right-column__loading-bar loading"></div>
           </li>
           <li className="right-column__table-item">
-            <p className="right-column__text">ООП</p>
+            <p className="right-column__text">{translation.skills.oop}</p>
             <div className="right-column__loading-bar loading"></div>
           </li>
           <li className="right-column__table-item">
@@ -36,7 +41,7 @@ export default function Skills(props) {
             <div className="right-column__loading-bar loading"></div>
           </li>
           <li className="right-column__table-item">
-            <p className="right-column__text">БЭМ</p>
+            <p className="right-column__text">{translation.skills.bem}</p>
             <div className="right-column__loading-bar loading"></div>
           </li>
           <li className="right-column__table-item">
@@ -78,24 +83,28 @@ export default function Skills(props) {
         <h2 className="right-column__title">SOFT SKILLS</h2>
         <ul className="right-column__table">
           <li className="right-column__table-item">
-            <p className="right-column__text">Самоорганизованность</p>
-          </li>
-          <li className="right-column__table-item">
-            <p className="right-column__text">Умение работать в команде</p>
-          </li>
-          <li className="right-column__table-item">
-            <p className="right-column__text">Коммуникация</p>
-          </li>
-          <li className="right-column__table-item">
-            <p className="right-column__text">Самостоятельность</p>
-          </li>
-          <li className="right-column__table-item">
             <p className="right-column__text">
-              Умение находить решение проблем
+              {translation.skills.self_managment}
             </p>
           </li>
           <li className="right-column__table-item">
-            <p className="right-column__text">Стрессоустойчивость</p>
+            <p className="right-column__text">{translation.skills.teamwork}</p>
+          </li>
+          <li className="right-column__table-item">
+            <p className="right-column__text">
+              {translation.skills.communication}
+            </p>
+          </li>
+          <li className="right-column__table-item">
+            <p className="right-column__text">
+              {translation.skills.self_dependence}
+            </p>
+          </li>
+          <li className="right-column__table-item">
+            <p className="right-column__text">{translation.skills.problems}</p>
+          </li>
+          <li className="right-column__table-item">
+            <p className="right-column__text">{translation.skills.stress}</p>
           </li>
         </ul>
       </div>

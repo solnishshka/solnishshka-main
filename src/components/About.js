@@ -1,37 +1,20 @@
+import { useContext } from 'react'
+import { TranslationContext } from '../contexts/translationContext'
+
 export default function About(props) {
+  const translation = useContext(TranslationContext)
+
   return (
     <section className="section" id="about">
       <div className="left-column left-column_color_dark">
-        <h2 className="left-column__title">ОБО МНЕ</h2>
+        <h2 className="left-column__title">{translation.menu.about}</h2>
       </div>
       <div className="right-column right-column_type_about">
-        <p className="right-column__text">
-          Начинающий frontend-разработчик. На данный момент обучаюсь в
-          Яндекс.Практикуме по специальности web-разработка. Хорошо верстаю,
-          знаю нативный JS, имею опыт работы с React (React Context, React
-          Router), умею работать с Api, понимаю и умею применять принципы ООП.
-        </p>
-        <p className="right-column__text">
-          Знакома с анализом сложности алгоритмов, а также самостоятельно изучаю
-          алгоритмы и их применение в реальных задачах. Стараюсь постоянно
-          обучаться, расти как специалист и изучать новые технологии.
-        </p>
-        <p className="right-column__text">
-          Любовь к вебу случилась со мной во время работы в поддержке
-          web-сервиса, а разработка мне близка еще с университета, но хотелось
-          попробовать себя в разных сферах.
-        </p>
-        <p className="right-column__text">
-          Хочу расти и развиваться во frontend-разработке с позиции младшего
-          разработчика, присоединившись к команде единомышленников, которые
-          также как и я относятся к работе с большим рвение и страстью.
-        </p>
-        <p className="right-column__text">
-          В свободное время люблю заниматься танцами, готовить интересные и
-          красивые блюда, путешествовать, рисовать, играть в настольные и
-          компьютерные игры (MMORPG). Без вредных привычек, имею двоих детей и
-          мужа, который разделяет мою любовь к IT-сфере.
-        </p>
+        <p className="right-column__text">{translation.about.p_1}</p>
+        <p className="right-column__text">{translation.about.p_2}</p>
+        <p className="right-column__text">{translation.about.p_3}</p>
+        <p className="right-column__text">{translation.about.p_4}</p>
+        <p className="right-column__text">{translation.about.p_5}</p>
       </div>
     </section>
   )

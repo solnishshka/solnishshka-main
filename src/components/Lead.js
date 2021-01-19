@@ -1,7 +1,11 @@
 import Social from './Social'
 import avatar from '../images/portrait.png'
+import { useContext } from 'react'
+import { TranslationContext } from '../contexts/translationContext'
 
 export default function Lead(props) {
+  const translation = useContext(TranslationContext)
+
   return (
     <section className="section">
       <div className="left-column left-column_type_lead left-column_color_light">
@@ -15,23 +19,23 @@ export default function Lead(props) {
             rel="noreferrer"
             download
           >
-            Скачать резюме
+            {translation.download}
           </a>
         </button>
       </div>
       <div className="right-column right-column_type_lead">
         <h1 className="lead__title">
-          Анастасия <span className="lead__title-span">Подкопаева</span>
+          {translation.name}<span className="lead__title-span">{translation.surname}</span>
         </h1>
         <p className="lead__description">Junior Frontend Developer</p>
         <Social type="lead" />
         <ul className="lead__contacts">
           <li className="lead__contact">
-            <h2 className="lead__contact-title">Регион</h2>
-            <p className="lead__contact-text">Москва</p>
+            <h2 className="lead__contact-title">{translation.location_title}</h2>
+            <p className="lead__contact-text">{translation.location}</p>
           </li>
           <li className="lead__contact">
-            <h2 className="lead__contact-title">Телефон</h2>
+            <h2 className="lead__contact-title">{translation.phone_title}</h2>
             <p className="lead__contact-text">
               <a className="lead__contact-link" href="tel:+0 (000) 000-00-00">
                 +0 (000) 000-00-00

@@ -1,8 +1,13 @@
+import { useContext } from 'react'
+import { TranslationContext } from '../contexts/translationContext'
+
 export default function Education(props) {
+  const translation = useContext(TranslationContext)
+
   return (
     <section className="section" id="education">
       <div className="left-column left-column_color_light">
-        <h2 className="left-column__title">ОБУЧЕНИЕ</h2>
+        <h2 className="left-column__title">{translation.menu.education}</h2>
       </div>
       <div className="right-column">
         <ul className="right-column__table right-column__table_type_education">
@@ -12,26 +17,21 @@ export default function Education(props) {
           </li>
           <li>
             <p className="right-column__text right-column__text_type_experience">
-              2020 - Настоящее время
+              2020 - {translation.experience.praktikum.present}
             </p>
-            <h2 className="right-column__table-title">Яндекс.Практикум</h2>
+            <h2 className="right-column__table-title">
+              {translation.experience.praktikum.title}
+            </h2>
             <p className="right-column__text right-column__text_type_experience">
-              Веб-разработчик
+              {translation.experience.praktikum.job}
             </p>
           </li>
           <li className="right-column__text-item">
             <p className="right-column__text right-column__text_type_experience">
-              В рамках обучения в Практикуме научилась качественно верстать
-              (адаптивная верстка с применением различных технологий), освоила
-              принципы БЭМ, обучалась разработке на нативном JavaScript
-              (взаимодействие с Api, асинхронные операции, ОПП, замыкания
-              функций и тп), а также освоила React (React Context, React
-              Router).
+              {translation.experience.praktikum.description_1}
             </p>
             <p className="right-column__text right-column__text_type_experience">
-              В настоящее время изучаю основы бекенда для фронтед-разработчика -
-              Node.JS, Express, создание REST Api, а также принципы работы с
-              Mongo DB.
+              {translation.experience.praktikum.description_2}
             </p>
           </li>
           <li>
@@ -42,15 +42,14 @@ export default function Education(props) {
             <p className="right-column__text right-column__text_type_experience">
               2006 - 2008
             </p>
-            <h2 className="right-column__table-title">МАИ</h2>
+            <h2 className="right-column__table-title">{translation.experience.mai.title}</h2>
             <p className="right-column__text right-column__text_type_experience">
-              Прикладная математика и физика
+            {translation.experience.mai.job}
             </p>
           </li>
           <li className="right-column__text-item">
             <p className="right-column__text right-column__text_type_experience">
-              Изучала основы программирования и информационных технологий,
-              математический анализ, дискретную математику и линейную алгебру.
+            {translation.experience.mai.description}
             </p>
           </li>
         </ul>

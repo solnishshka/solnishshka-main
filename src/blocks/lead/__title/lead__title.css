@@ -25,7 +25,17 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 490px) {
+  .lead__title {
+    font-size: 24px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 490px) and (max-width: 768px) {
   .lead__title {
     font-size: 36px;
     text-align: center;

@@ -1,6 +1,19 @@
-import cn from 'classnames';
+import cn from 'classnames'
+import { useContext } from 'react'
+import { TranslationContext } from '../contexts/translationContext'
 
 export default function Header(props) {
+  const translation = useContext(TranslationContext)
+
+  function handleLang(evt) {
+    if (evt.target.textContent === 'RU') {
+      props.setLang('ru')
+      sessionStorage.setItem('lang', 'ru')
+    } else {
+      props.setLang('en')
+      sessionStorage.setItem('lang', 'en')
+    }
+  }
 
   return (
     <div className="header-container">
@@ -9,30 +22,34 @@ export default function Header(props) {
           <span className="logo__span">SOLN</span>ishshka
         </a>
         <nav>
-          <ul className={cn("header__menu-items", {"header__menu-items_active": props.isActive})}>
+          <ul
+            className={cn('header__menu-items', {
+              'header__menu-items_active': props.isActive,
+            })}
+          >
             <li className="header__menu-item">
               <a className="header__link" href="#about">
-                ОБО МНЕ
+                {translation.menu.about}
               </a>
             </li>
             <li className="header__menu-item">
               <a className="header__link" href="#skills">
-                НАВЫКИ
+                {translation.menu.skills}
               </a>
             </li>
             <li className="header__menu-item">
               <a className="header__link" href="#experience">
-                ОПЫТ РАБОТЫ
+                {translation.menu.experience}
               </a>
             </li>
             <li className="header__menu-item">
               <a className="header__link" href="#education">
-                ОБУЧЕНИЕ
+                {translation.menu.education}
               </a>
             </li>
             <li className="header__menu-item">
               <a className="header__link" href="#portfolio">
-                ПОРТФОЛИО
+                {translation.menu.portfolio}
               </a>
             </li>
           </ul>
@@ -46,14 +63,34 @@ export default function Header(props) {
             rel="noreferrer"
             download
           >
-            Скачать резюме
+            {translation.download}
           </a>
         </button>
         <ul className="header__links">
-          <li className="header__link-item header__link-item_active">RU</li>
-          <li className="header__link-item">EN</li>
+          <li
+            className={cn('header__link-item', {
+              'header__link-item_active': props.lang === 'ru',
+            })}
+            onClick={handleLang}
+          >
+            RU
+          </li>
+          <li
+            className={cn('header__link-item', {
+              'header__link-item_active': props.lang === 'en',
+            })}
+            onClick={handleLang}
+          >
+            EN
+          </li>
         </ul>
-        <button className={cn("header__menu", {"header__menu_inactive": props.isActive})} onClick={props.handleClick} onKeyUp={props.handleEscClose}></button>
+        <button
+          className={cn('header__menu', {
+            header__menu_inactive: props.isActive,
+          })}
+          onClick={props.handleClick}
+          onKeyUp={props.handleEscClose}
+        ></button>
       </header>
     </div>
   )
