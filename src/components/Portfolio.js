@@ -16,7 +16,7 @@ export default function Portfolio(props) {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+            <i className="fa fa-github fa-4x" aria-hidden="true"></i>
             <br />
             Все проекты в Github
           </a>

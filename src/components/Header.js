@@ -1,6 +1,7 @@
-import menuImage from '../images/burger-menu.png'
+import cn from 'classnames';
 
 export default function Header(props) {
+
   return (
     <div className="header-container">
       <header className="header">
@@ -8,7 +9,7 @@ export default function Header(props) {
           <span className="logo__span">SOLN</span>ishshka
         </a>
         <nav>
-          <ul className="header__menu-items">
+          <ul className={cn("header__menu-items", {"header__menu-items_active": props.isActive})}>
             <li className="header__menu-item">
               <a className="header__link" href="#about">
                 ОБО МНЕ
@@ -52,7 +53,7 @@ export default function Header(props) {
           <li className="header__link-item header__link-item_active">RU</li>
           <li className="header__link-item">EN</li>
         </ul>
-        <img className="header__menu" src={menuImage} alt="Меню" />
+        <button className={cn("header__menu", {"header__menu_inactive": props.isActive})} onClick={props.handleClick} onKeyUp={props.handleEscClose}></button>
       </header>
     </div>
   )

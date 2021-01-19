@@ -1,6 +1,6 @@
 .right-column__table_type_experience {
   grid-template-columns: 13px 220px 350px;
-  grid-template-rows: repeat(4, 170px);
+  grid-template-rows: repeat(4, auto);
   gap: 50px;
   max-width: 683px;
 }

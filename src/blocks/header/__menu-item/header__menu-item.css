@@ -2,8 +2,16 @@
   margin-left: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .header__menu-item {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header__menu-item {
     margin-left: 10px;
+    margin-bottom: 0;
   }
 }

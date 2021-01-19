@@ -21,10 +21,17 @@ export default function Education(props) {
           </li>
           <li className="right-column__text-item">
             <p className="right-column__text right-column__text_type_experience">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi
-              neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
-              ligula sollicitudin laoreet viverra, tortor libero.
+              В рамках обучения в Практикуме научилась качественно верстать
+              (адаптивная верстка с применением различных технологий), освоила
+              принципы БЭМ, обучалась разработке на нативном JavaScript
+              (взаимодействие с Api, асинхронные операции, ОПП, замыкания
+              функций и тп), а также освоила React (React Context, React
+              Router).
+            </p>
+            <p className="right-column__text right-column__text_type_experience">
+              В настоящее время изучаю основы бекенда для фронтед-разработчика -
+              Node.JS, Express, создание REST Api, а также принципы работы с
+              Mongo DB.
             </p>
           </li>
           <li>
@@ -42,10 +49,8 @@ export default function Education(props) {
           </li>
           <li className="right-column__text-item">
             <p className="right-column__text right-column__text_type_experience">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi
-              neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
-              ligula sollicitudin laoreet viverra, tortor libero.
+              Изучала основы программирования и информационных технологий,
+              математический анализ, дискретную математику и линейную алгебру.
             </p>
           </li>
         </ul>

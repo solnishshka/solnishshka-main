@@ -5,10 +5,17 @@
   font-weight: 500;
   margin-bottom: 10px;
   font-size: 20px;
+  width: 90%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .right-column__table-title {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right-column__table-title {
+    margin-left: 7px;
   }
 }

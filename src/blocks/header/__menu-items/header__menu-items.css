@@ -8,6 +8,15 @@
 
 @media screen and (max-width: 767px) {
   .header__menu-items {
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 3px;
+    padding: 10px;
     display: none;
   }
 }

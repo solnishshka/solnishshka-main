@@ -6,4 +6,12 @@
   max-width: 1440px;
   min-width: 320px;
   min-height: 85px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin: auto 20px;
+    min-width: 280px;
+  }
 }
