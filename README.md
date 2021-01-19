@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Личный сайт-резюме начинающего frontend-разработчика
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Превью доступно по ссылке: https://solnishshka.xyz/
+Макет: https://www.figma.com/file/P9ZtWEmlnAsD0VcDiru57m/MyPersonal?node-id=31%3A95
+
+Стек технологий:
+HTML, CSS (grid, flex, media)
+React JS
+Библиотеки: classnames
+
+Планы по доработке:
+Локализация на 2 языках
+
 
 ## Available Scripts
 
