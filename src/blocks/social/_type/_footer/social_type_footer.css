@@ -1,0 +1,21 @@
+.social_type_footer {
+  min-width: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .social_type_footer {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social_type_footer {
+    min-width: 140px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .social_type_footer {
+    display: none;
+  }
+}

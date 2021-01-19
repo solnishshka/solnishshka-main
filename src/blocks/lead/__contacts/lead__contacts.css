@@ -1,10 +1,38 @@
-.lead__contacts{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-    padding: 0;
-    border-top: 1px solid rgba(93, 93, 93, 0.3);
-    max-width: 820px;
-    text-align: start;
+.lead__contacts {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 0;
+  border-top: 1px solid rgba(93, 93, 93, 0.3);
+  max-width: 820px;
+  text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__contacts {
+    width: 100%;
+    flex-direction: column;
+    min-height: 350px;
+    border: none;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .lead__contacts {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .lead__contacts {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lead__contacts {
+    max-width: 700px;
+  }
 }

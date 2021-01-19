@@ -1,3 +1,10 @@
-.right-column__table_type_hard{
-    grid-template-rows: repeat(5, 50px);
+.right-column__table_type_hard {
+  grid-template-rows: repeat(5, 50px);
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 490px) {
+  .right-column__table_type_hard {
+    grid-template-rows: repeat(10, 50px);
+  }
 }

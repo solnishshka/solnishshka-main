@@ -1,0 +1,14 @@
+.lead__contact-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .lead__contact-title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,15 @@
+.button__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.button__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .button__link {
+    font-size: 12px;
+  }
+}

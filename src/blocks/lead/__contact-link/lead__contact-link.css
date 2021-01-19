@@ -1,0 +1,10 @@
+.lead__contact-link {
+  text-decoration: none;
+  color: #939393;
+  transition: color 1s linear;
+}
+
+.lead__contact-link:hover {
+  text-decoration: underline;
+  color: #f8bb10;
+}

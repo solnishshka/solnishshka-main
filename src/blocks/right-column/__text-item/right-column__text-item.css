@@ -1,0 +1,5 @@
+@media screen and (max-width: 489px) {
+  .right-column__text-item {
+    display: none;
+  }
+}

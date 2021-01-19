@@ -1,7 +1,14 @@
-.right-column__table-title{
-    margin: 0;
-    text-align: start;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
+.right-column__table-title {
+  margin: 0;
+  text-align: start;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .right-column__table-title {
+    font-size: 18px;
+  }
 }

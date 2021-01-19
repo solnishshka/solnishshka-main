@@ -1,0 +1,26 @@
+.button {
+  background-color: #f8bb10;
+  width: 140px;
+  height: 35px;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 1s linear;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #939393;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .button {
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+  }
+}

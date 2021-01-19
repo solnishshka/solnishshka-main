@@ -1,12 +1,12 @@
-.content{
-    font-family: 'Roboto', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    min-width: 320px;
-    max-width: 1440px;
-    width: 100%;
-    background-color: #ffffff;
-    color: #939393;
-    margin: 0 auto;
-    margin-bottom: 85px;
+.content {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #939393;
+  margin: 0 auto;
+  margin-top: 85px;
 }

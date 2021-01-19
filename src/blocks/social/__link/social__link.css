@@ -1,10 +1,9 @@
-.social__link{
-    text-decoration: none;
-    color: #939393;
-    margin-left: 21px;
-    transition: color 1s linear;
+.social__link {
+  text-decoration: none;
+  color: #939393;
+  transition: color 1s linear;
 }
 
-.social__link:hover{
-    color: #F8BB10;
+.social__link:hover {
+  color: #f8bb10;
 }

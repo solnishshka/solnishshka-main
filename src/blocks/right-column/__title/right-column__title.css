@@ -1,5 +1,22 @@
-.right-column__title{
-    color: #F8BB10;
-    margin: 0;
-    margin-bottom: 40px;
+.right-column__title {
+  color: #f8bb10;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .right-column__title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right-column__title {
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }

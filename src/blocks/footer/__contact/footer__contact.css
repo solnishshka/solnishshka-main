@@ -1,5 +1,11 @@
-.footer__contact{
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 16px;
+.footer__contact {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__contact {
+    font-size: 12px;
+  }
 }
