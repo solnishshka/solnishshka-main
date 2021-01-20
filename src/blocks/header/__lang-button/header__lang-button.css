@@ -1,0 +1,24 @@
+.header__lang-button {
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #727272;
+  transition: transform 1s linear;
+  border: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+.header__lang-button:hover{
+    transform: scale(1.2);
+}
+
+.header__lang-button:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__lang-button {
+    font-size: 12px;
+  }
+}

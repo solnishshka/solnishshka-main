@@ -35,10 +35,10 @@ export default function Lead(props) {
             <p className="lead__contact-text">{translation.location}</p>
           </li>
           <li className="lead__contact">
-            <h2 className="lead__contact-title">{translation.phone_title}</h2>
+            <h2 className="lead__contact-title">Telegram</h2>
             <p className="lead__contact-text">
-              <a className="lead__contact-link" href="tel:+0 (000) 000-00-00">
-                +0 (000) 000-00-00
+              <a className="lead__contact-link" href="https://t.me/solnishshka">
+                @solnishshka
               </a>
             </p>
           </li>

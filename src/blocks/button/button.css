@@ -6,7 +6,7 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 1s linear;
+  transition: transform 1s linear;
 }
 
 .button:focus {
@@ -14,7 +14,7 @@
 }
 
 .button:hover {
-  background-color: #939393;
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

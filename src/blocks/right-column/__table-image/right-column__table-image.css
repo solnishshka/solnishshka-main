@@ -5,11 +5,13 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  transition: transform 1s linear;
+  transition: transform 1s linear, opacity 1s linear;
+  opacity: 0.6;
 }
 
 .right-column__table-image:hover {
   transform: scale(1.2);
+  opacity: 1;
   cursor: pointer;
 }
 

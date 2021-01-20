@@ -13,9 +13,3 @@
     min-width: 140px;
   }
 }
-
-@media screen and (max-width: 550px) {
-  .social_type_footer {
-    display: none;
-  }
-}

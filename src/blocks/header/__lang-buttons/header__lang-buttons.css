@@ -1,4 +1,4 @@
-.header__links {
+.header__lang-buttons {
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header__links {
+  .header__lang-buttons {
     margin-right: 40px;
     margin-left: auto;
   }

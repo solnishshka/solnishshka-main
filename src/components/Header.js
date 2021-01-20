@@ -66,22 +66,26 @@ export default function Header(props) {
             {translation.download}
           </a>
         </button>
-        <ul className="header__links">
-          <li
-            className={cn('header__link-item', {
-              'header__link-item_active': props.lang === 'ru',
-            })}
-            onClick={handleLang}
-          >
-            RU
+        <ul className="header__lang-buttons">
+          <li>
+            <button
+              className={cn('header__lang-button', {
+                'header__lang-button_active': props.lang === 'ru',
+              })}
+              onClick={handleLang}
+            >
+              RU
+            </button>
           </li>
-          <li
-            className={cn('header__link-item', {
-              'header__link-item_active': props.lang === 'en',
-            })}
-            onClick={handleLang}
-          >
-            EN
+          <li>
+            <button
+              className={cn('header__lang-button', {
+                'header__lang-button_active': props.lang === 'en',
+              })}
+              onClick={handleLang}
+            >
+              EN
+            </button>
           </li>
         </ul>
         <button

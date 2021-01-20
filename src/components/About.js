@@ -10,11 +10,11 @@ export default function About(props) {
         <h2 className="left-column__title">{translation.menu.about}</h2>
       </div>
       <div className="right-column right-column_type_about">
-        <p className="right-column__text">{translation.about.p_1}</p>
-        <p className="right-column__text">{translation.about.p_2}</p>
-        <p className="right-column__text">{translation.about.p_3}</p>
-        <p className="right-column__text">{translation.about.p_4}</p>
-        <p className="right-column__text">{translation.about.p_5}</p>
+        <p className="right-column__text right-column__text_type_about">{translation.about.p_1}</p>
+        <p className="right-column__text right-column__text_type_about">{translation.about.p_2}</p>
+        <p className="right-column__text right-column__text_type_about">{translation.about.p_3}</p>
+        <p className="right-column__text right-column__text_type_about">{translation.about.p_4}</p>
+        <p className="right-column__text right-column__text_type_about">{translation.about.p_5}</p>
       </div>
     </section>
   )

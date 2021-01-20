@@ -1,7 +1,7 @@
 .right-column__text {
   margin: 0;
   text-align: start;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 300;
   max-width: 850px;
@@ -29,7 +29,6 @@
 @media screen and (max-width: 767px) {
   .right-column__text {
     width: 90%;
-    margin: 0 auto 20px auto;
     font-size: 14px;
   }
 }

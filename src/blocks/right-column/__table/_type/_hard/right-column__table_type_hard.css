@@ -1,10 +1,11 @@
 .right-column__table_type_hard {
-  grid-template-rows: repeat(5, 50px);
+  grid-template-rows: repeat(5, 40px);
   margin-bottom: 40px;
+  row-gap: 25px;
 }
 
 @media screen and (max-width: 490px) {
   .right-column__table_type_hard {
-    grid-template-rows: repeat(10, 50px);
+    grid-template-rows: repeat(10, 40px);
   }
 }

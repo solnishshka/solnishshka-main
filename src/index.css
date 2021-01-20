@@ -10,12 +10,12 @@
 @import url(./blocks/header/__menu-items/header__menu-items.css);
 @import url(./blocks/header/__menu-item/header__menu-item.css);
 @import url(./blocks/header/__link/header__link.css);
-@import url(./blocks/header/__links/header__links.css);
-@import url(./blocks/header/__link-item/header__link-item.css);
-@import url(./blocks/header/__link-item/_active/header__link-item_active.css);
 @import url(./blocks/header/__menu/header__menu.css);
 @import url(./blocks/header/__menu/_inactive/header__menu_inactive.css);
 @import url(./blocks/header/__menu-items/_active/header__menu-items_active.css);
+@import url(./blocks/header/__lang-buttons/header__lang-buttons.css);
+@import url(./blocks/header/__lang-button/header__lang-button.css);
+@import url(./blocks/header/__lang-button/_active/header__lang-button_active.css);
 
 @import url(./blocks/lead/lead.css);
 @import url(./blocks/lead/__avatar/lead__avatar.css);
@@ -65,6 +65,7 @@
 @import url(./blocks/right-column/__table-image/right-column__table-image.css);
 @import url(./blocks/right-column/__link/right-column__link.css);
 @import url(./blocks/right-column/__text-item/right-column__text-item.css);
+@import url(./blocks/right-column/__text/_type/_about/right-column__text_type_about.css);
 
 @import url(./blocks/left-column/left-column.css);
 @import url(./blocks/left-column/_type/_lead/left-column_type_lead.css);

@@ -9,7 +9,7 @@ React JS
 Библиотеки: classnames
 
 Планы по доработке:
-Локализация на 2 языках
+Темная тема
 
 
 ## Available Scripts

@@ -19,7 +19,7 @@ export const translations = {
     phone_title: 'Phone',
     about: {
       p_1:
-        'I am junior frontend developer. I am currently studying at Yandex.Practical training in the specialty web-development. I am a good typesetter, I know native JS, I have experience with React (React Context, React Router), I know how to work with the Api, I understand and know how to apply the principles of OOP.',
+        'I am junior frontend developer. I am currently studying at Yandex.Praktikum training in the specialty web-development. I am a good typesetter, I know native JS, I have experience with React (React Context, React Router), I know how to work with the Api, I understand and know how to apply the principles of OOP.',
       p_2:
         'I am familiar with the analysis of the complexity of algorithms, and also independently study algorithms and their application in real problems. I try to constantly learn, grow as a specialist and learn new technologies.',
       p_3:

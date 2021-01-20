@@ -4,10 +4,9 @@ export default function Footer(props) {
   return (
     <footer className="footer">
       <div className="footer__contacts">
-        <p className="footer__contact">+0 (000) 000-00-00</p>
-        <p className="footer__contact">testsolnishshka@yandex.ru</p>
+        <p className="footer__contact">Email: testsolnishshka@yandex.ru</p>
+        <Social type="footer" />
       </div>
-      <Social type="footer" />
       <p className="footer__copyright">
         ©<span className="footer__copyright-span">SOLN</span>ishshka
       </p>
