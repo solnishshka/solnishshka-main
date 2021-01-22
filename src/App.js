@@ -25,7 +25,7 @@ const Content = styled.div`
 
 function App() {
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme') === 'light' ? lightTheme : darkTheme
+    localStorage.getItem('theme') !== 'dark' ? lightTheme : darkTheme
   )
   const [lang, setLang] = useState(sessionStorage.getItem('lang') || 'ru')
   const [isOpenMainMenu, setIsOpenMainMenu] = useState(false)
