@@ -1,21 +1,17 @@
 import { useContext } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
-
+import RightColumn from './RightColumn/RightColumn'
+import { RightColumnTextAbout } from './RightColumn/RightColumnText'
 export default function About(props) {
   const translation = useContext(TranslationContext)
 
   return (
-    <section className="section" id="about">
-      <div className="left-column left-column_color_dark">
-        <h2 className="left-column__title">{translation.menu.about}</h2>
-      </div>
-      <div className="right-column right-column_type_about">
-        <p className="right-column__text right-column__text_type_about">{translation.about.p_1}</p>
-        <p className="right-column__text right-column__text_type_about">{translation.about.p_2}</p>
-        <p className="right-column__text right-column__text_type_about">{translation.about.p_3}</p>
-        <p className="right-column__text right-column__text_type_about">{translation.about.p_4}</p>
-        <p className="right-column__text right-column__text_type_about">{translation.about.p_5}</p>
-      </div>
-    </section>
+    <RightColumn>
+      <RightColumnTextAbout type="about">{translation.about.p_1}</RightColumnTextAbout>
+      <RightColumnTextAbout type="about">{translation.about.p_2}</RightColumnTextAbout>
+      <RightColumnTextAbout type="about">{translation.about.p_3}</RightColumnTextAbout>
+      <RightColumnTextAbout type="about">{translation.about.p_4}</RightColumnTextAbout>
+      <RightColumnTextAbout type="about">{translation.about.p_5}</RightColumnTextAbout>
+    </RightColumn>
   )
 }

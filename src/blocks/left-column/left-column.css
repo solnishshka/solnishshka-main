@@ -1,9 +1,0 @@
-.left-column {
-  width: 30%;
-}
-
-@media screen and (max-width: 767px) {
-  .left-column {
-    width: 100%;
-  }
-}

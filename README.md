@@ -6,11 +6,7 @@
 Стек технологий:
 HTML, CSS (grid, flex, media)
 React JS
-Библиотеки: classnames
-
-Планы по доработке:
-Темная тема
-
+Библиотеки: styled-components, classnames
 
 ## Available Scripts
 

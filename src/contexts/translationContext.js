@@ -80,7 +80,11 @@ export const translations = {
           'I am studied the basics of programming and information technology, mathematical analysis, discrete mathematics and linear algebra.',
       },
     },
-    portfolio: 'All projects in Github'
+    portfolio: 'All projects in Github',
+    themeButton: {
+      light: 'Dark mode',
+      dark: 'Light mode',
+    },
   },
   ru: {
     name: 'Анастасия',
@@ -160,6 +164,10 @@ export const translations = {
           'Изучала основы программирования и информационных технологий, математический анализ, дискретную математику и линейную алгебру.',
       },
     },
-    portfolio: 'Все проекты в Github'
+    portfolio: 'Все проекты в Github',
+    themeButton: {
+      light: 'Темная сторона',
+      dark: 'Светлая сторона',
+    },
   },
 }
