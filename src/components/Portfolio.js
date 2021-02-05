@@ -9,14 +9,14 @@ import styled from 'styled-components'
 
 const Link = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.colors.textColorLight};
+  color: ${(props) => props.theme.colors.textColorLight};
   font-size: 22px;
   transition: color 1s ease;
   margin: auto;
   text-align: center;
 
   &:hover {
-    color: ${props => props.theme.colors.yellow};
+    color: ${(props) => props.theme.colors.yellow};
     text-decoration: underline;
   }
 
@@ -31,6 +31,10 @@ const Link = styled.a`
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     font-size: 18px;
   }
+`
+
+const LinkImage = styled.a`
+  overflow: hidden;
 `
 
 const Image = styled.img`
@@ -85,27 +89,27 @@ export default function Portfolio(props) {
           <br />
           {translation.portfolio}
         </Link>
-        <a
+        <LinkImage
           href="https://solnishshka.github.io/russian-travel/index.html"
           target="_blank"
           rel="noreferrer"
         >
           <Image src={img_4} alt="Превью проекта Путешествия по России" />
-        </a>
-        <a
-          href="https://solnishshka.github.io/mesto-react/"
+        </LinkImage>
+        <LinkImage
+          href="https://solnishshka.github.io/react-mesto-auth/"
           target="_blank"
           rel="noreferrer"
         >
           <Image src={img_2} alt="Превью проекта Место" />
-        </a>
-        <a
+        </LinkImage>
+        <LinkImage
           href="https://solnishshka.github.io/how-to-learn/"
           target="_blank"
           rel="noreferrer"
         >
           <Image src={img_1} alt="Превью проекта Научиться учиться" />
-        </a>
+        </LinkImage>
       </TablePortfolio>
     </RightColumn>
   )

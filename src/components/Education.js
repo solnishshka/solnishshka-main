@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { Fragment, useContext } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 import RightColumn from './RightColumn/RightColumn'
 import { TableEducation, TableTitle } from './RightColumn/RightColumnTable'
@@ -7,6 +7,7 @@ import {
   RightColumnTextItem,
 } from './RightColumn/RightColumnText'
 import { Circle, Line } from './RightColumn/RightColumnDecoration'
+import { v4 as uuidv4 } from 'uuid'
 
 export default function Education(props) {
   const translation = useContext(TranslationContext)
@@ -14,43 +15,26 @@ export default function Education(props) {
   return (
     <RightColumn>
       <TableEducation>
-        <li>
-          <Circle />
-          <Line />
-        </li>
-        <li>
-          <RightColumnTextExperience>
-            2020 - {translation.experience.praktikum.present}
-          </RightColumnTextExperience>
-          <TableTitle>{translation.experience.praktikum.title}</TableTitle>
-          <RightColumnTextExperience>
-            {translation.experience.praktikum.job}
-          </RightColumnTextExperience>
-        </li>
-        <RightColumnTextItem>
-          <RightColumnTextExperience>
-            {translation.experience.praktikum.description_1}
-          </RightColumnTextExperience>
-          <RightColumnTextExperience>
-            {translation.experience.praktikum.description_2}
-          </RightColumnTextExperience>
-        </RightColumnTextItem>
-        <li>
-          <Circle />
-          <Line />
-        </li>
-        <li>
-          <RightColumnTextExperience>2006 - 2008</RightColumnTextExperience>
-          <TableTitle>{translation.experience.mai.title}</TableTitle>
-          <RightColumnTextExperience>
-            {translation.experience.mai.job}
-          </RightColumnTextExperience>
-        </li>
-        <RightColumnTextItem>
-          <RightColumnTextExperience>
-            {translation.experience.mai.description}
-          </RightColumnTextExperience>
-        </RightColumnTextItem>
+        {translation.education.map((item) => (
+          <Fragment key={uuidv4()}>
+            <li>
+              <Circle />
+              <Line />
+            </li>
+            <li>
+              <RightColumnTextExperience>{item.date}</RightColumnTextExperience>
+              <TableTitle>{item.title}</TableTitle>
+              <RightColumnTextExperience>{item.job}</RightColumnTextExperience>
+            </li>
+            <RightColumnTextItem>
+              {item.description.map((text) => (
+                <RightColumnTextExperience key={uuidv4()}>
+                  {text}
+                </RightColumnTextExperience>
+              ))}
+            </RightColumnTextItem>
+          </Fragment>
+        ))}
       </TableEducation>
     </RightColumn>
   )

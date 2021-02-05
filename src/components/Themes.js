@@ -12,6 +12,7 @@ export const lightTheme = {
     bgColorLight: '#fbfbfb',
     yellow: '#f8bb10',
     lineColor: 'rgba(93, 93, 93, 0.3)',
+    formColor: '#fff'
   },
 }
 
@@ -26,5 +27,6 @@ export const darkTheme = {
     bgColorSuperDark: '#212121',
     yellow: '#f8bb10',
     lineColor: 'rgba(93, 93, 93, 0.3)',
+    formColor: '#EEEEEE'
   },
 }

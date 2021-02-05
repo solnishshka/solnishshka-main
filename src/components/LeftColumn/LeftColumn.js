@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const LeftColumnElement = styled.div`
-  width: 100%;
   background-color: ${(props) =>
     props.color === 'dark'
       ? props.theme.colors.bgColorDark
@@ -9,7 +8,7 @@ const LeftColumnElement = styled.div`
   ${(props) =>
     props.isLead &&
     'display: flex; flex-direction: column; justify-content: space-between; align-items: center;'}
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `

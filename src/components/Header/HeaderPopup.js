@@ -4,19 +4,12 @@ import HeaderMenu from './HeaderMenu'
 import CloseButtonImage from '../../images/menu-close.png'
 import { Button } from '../Button'
 import { useEffect } from 'react'
-
-const Popup = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-`
+import Popup from '../Popup'
 
 const CloseButton = styled(Button)`
   background-image: url(${CloseButtonImage});
   position: absolute;
-  top: 37px;
+  top: 35px;
   right: 10px;
   width: 17px;
   height: 17px;
@@ -24,8 +17,12 @@ const CloseButton = styled(Button)`
   background-repeat: no-repeat;
   z-index: 100;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     ${(props) => props.isOpenMainMenu && 'display: none;'}
+    right: 5px;
+  }
+  @media screen and (min-width: 1024px) {
+    right: 10px;
   }
   @media screen and (min-width: 1280px) {
     right: 5%;
@@ -43,7 +40,7 @@ export default function HeaderPopup({
   onClick,
   handleEscClose,
   toggleTheme,
-  currentTheme
+  currentTheme,
 }) {
   useEffect(() => {
     document.addEventListener('keydown', handleEscClose)
@@ -52,7 +49,7 @@ export default function HeaderPopup({
     }
   })
   return (
-    <Popup className="overlay">
+    <Popup>
       <CloseButton
         isOpenMainMenu={isOpenMainMenu}
         onClick={onClick}

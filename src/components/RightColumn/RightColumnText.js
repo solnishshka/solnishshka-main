@@ -12,7 +12,7 @@ export const RightColumnText = styled.p`
     width: 90%;
     font-size: 14px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     font-size: 16px;
     max-width: 450px;
   }
@@ -39,7 +39,7 @@ export const RightColumnTextExperience = styled(RightColumnText)`
     font-size: 14px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     max-width: 220px;
   }
 `

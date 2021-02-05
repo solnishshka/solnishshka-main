@@ -24,7 +24,7 @@ const HeaderElement = styled.div`
   min-width: 320px;
   min-height: 85px;
   position: relative;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     margin: auto 20px;
     min-width: 280px;
     justify-content: space-between;
@@ -32,7 +32,7 @@ const HeaderElement = styled.div`
 `
 
 const ButtonMenu = styled(Menu)`
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     min-width: 70px;
     position: relative;
   }
@@ -51,7 +51,7 @@ const MenuButton = styled(Button)`
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     ${(props) => (props.open ? 'display: none;' : 'display: block;')}
   }
 `
@@ -67,7 +67,7 @@ const SettingsButton = styled(Button)`
 `
 
 const MainMenu = styled(HeaderMenu)`
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `

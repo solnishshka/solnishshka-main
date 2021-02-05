@@ -1,9 +1,9 @@
-import Header from './components/Header/Header'
-import Footer from './components/Footer'
-import Main from './components/Main'
+import Header from './Header/Header'
+import Footer from './Footer'
+import Main from './Main'
 import { useState } from 'react'
-import { TranslationContext, translations } from './contexts/translationContext'
-import { lightTheme, darkTheme } from './components/Themes'
+import { TranslationContext, translations } from '../contexts/translationContext'
+import { lightTheme, darkTheme } from './Themes'
 import styled, { ThemeProvider } from 'styled-components'
 
 const AppContainer = styled.div`

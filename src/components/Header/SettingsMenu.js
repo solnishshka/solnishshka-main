@@ -16,7 +16,7 @@ const MainMenu = styled(Menu)`
   padding: 10px;
   border: 1px solid ${(props) => props.theme.colors.textColorLight};
   position: absolute;
-  top: 70px;
+  top: 65px;
   right: 10px;
   min-width: 135px;
   border: 1px solid rgba(0, 0, 0, 0.06);

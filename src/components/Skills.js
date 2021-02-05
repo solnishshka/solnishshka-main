@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import RightColumn from './RightColumn/RightColumn'
 import { Table, TableHard, TableAdvanced } from './RightColumn/RightColumnTable'
 import { RightColumnText } from './RightColumn/RightColumnText'
+import { v4 as uuidv4 } from 'uuid'
 import {
   ProgressBar100,
   ProgressBar75,
@@ -11,7 +12,7 @@ import {
 } from './RightColumn/RightColumnDecoration'
 
 const Title = styled.h2`
-  color: ${props => props.theme.colors.yellow};
+  color: ${(props) => props.theme.colors.yellow};
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
@@ -21,7 +22,7 @@ const Title = styled.h2`
     font-size: 18px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     font-size: 18px;
     width: 90%;
     margin: 0 auto;
@@ -31,101 +32,38 @@ const Title = styled.h2`
 
 export default function Skills(props) {
   const translation = useContext(TranslationContext)
-
+  
   return (
     <RightColumn>
       <Title>HARD SKILLS</Title>
       <TableHard>
-        <li>
-          <RightColumnText>JavaScript</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>React</RightColumnText>
-          <ProgressBar75 />
-        </li>
-        <li>
-          <RightColumnText>HTML5</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>CSS</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>{translation.skills.oop}</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>Git</RightColumnText>
-          <ProgressBar75 />
-        </li>
-        <li>
-          <RightColumnText>Webpack</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>{translation.skills.bem}</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>REST API</RightColumnText>
-          <ProgressBar75 />
-        </li>
-        <li>
-          <RightColumnText>Node.js</RightColumnText>
-          <ProgressBar50 />
-        </li>
+        {translation.skills.hard.map((skill) => (
+          <li key={uuidv4()}>
+            <RightColumnText>{skill}</RightColumnText>
+            {skill.match(/JavaScript|React|HTML5|CSS|OOP|ООП|BEM|БЭМ/) && <ProgressBar100 />}
+            {skill.match(/Git|REST Api/) && <ProgressBar75 />}
+            {skill.match(/Node.js|Webpack/) && <ProgressBar50 />}
+          </li>
+        ))}
       </TableHard>
       <Title>ADVANCED SKILLS</Title>
       <TableAdvanced>
-        <li>
-          <RightColumnText>Scrum</RightColumnText>
-          <ProgressBar100 />
-        </li>
-        <li>
-          <RightColumnText>Figma</RightColumnText>
-          <ProgressBar75 />
-        </li>
-        <li>
-          <RightColumnText>Photoshop</RightColumnText>
-          <ProgressBar50 />
-        </li>
-        <li>
-          <RightColumnText>Linux</RightColumnText>
-          <ProgressBar50 />
-        </li>
-        <li>
-          <RightColumnText>PHP</RightColumnText>
-          <ProgressBar50 />
-        </li>
-        <li>
-          <RightColumnText>CMS ModX, Wordpress</RightColumnText>
-          <ProgressBar75 />
-        </li>
+        {translation.skills.advanced.map((skill) => (
+          <li key={uuidv4()}>
+            <RightColumnText>{skill}</RightColumnText>
+            {skill.match(/Scrum/) && <ProgressBar100 />}
+            {skill.match(/Linux|Figma/) && <ProgressBar75 />}
+            {skill.match(/CMS ModX, Wordpress|PHP|Photoshop/) && <ProgressBar50 />}
+          </li>
+        ))}
       </TableAdvanced>
       <Title>SOFT SKILLS</Title>
       <Table>
-        <li>
-          <RightColumnText>{translation.skills.self_managment}</RightColumnText>
-        </li>
-        <li>
-          <RightColumnText>{translation.skills.teamwork}</RightColumnText>
-        </li>
-        <li>
-          <RightColumnText>{translation.skills.communication}</RightColumnText>
-        </li>
-        <li>
-          <RightColumnText>
-            {translation.skills.self_dependence}
-          </RightColumnText>
-        </li>
-        <li>
-          <RightColumnText>{translation.skills.problems}</RightColumnText>
-        </li>
-        <li>
-          <RightColumnText>{translation.skills.stress}</RightColumnText>
-        </li>
+        {translation.skills.advanced.map((skill) => (
+          <li key={uuidv4()}>
+            <RightColumnText>{skill}</RightColumnText>
+          </li>
+        ))}
       </Table>
     </RightColumn>
   )

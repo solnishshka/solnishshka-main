@@ -10,7 +10,7 @@ const Container = styled.div`
   @media screen and (max-width: 1024px) {
     ${(props) => props.type === 'footer' && 'min-width: 200px;'}
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     ${(props) => props.type === 'lead' && 'margin: 0 auto;'}
     ${(props) => props.type === 'footer' && 'min-width: 140px;'}
   }

@@ -7,6 +7,7 @@ import Portfolio from './Portfolio'
 import styled from 'styled-components'
 import LeftColumn from './LeftColumn/LeftColumn'
 import LeftColumnTitle from './LeftColumn/LeftColumnTitle'
+import ContactForm from './ContactForm'
 import DownloadButton from './Button'
 import avatar from '../images/portrait.png'
 import { useContext } from 'react'
@@ -18,7 +19,7 @@ const MainElement = styled.main`
   grid-template-columns: 30% 70%;
   grid-template-rows: repeat(6, auto);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 100%;
     grid-template-rows: repeat(12, auto);
   }
@@ -42,7 +43,7 @@ const Avatar = styled.img`
     margin-top: 150px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     margin: 0 auto;
     margin-top: 80px;
     max-width: 180px;
@@ -79,6 +80,10 @@ export default function Main(props) {
         <LeftColumnTitle>{translation.menu.portfolio}</LeftColumnTitle>
       </LeftColumn>
       <Portfolio />
+      <LeftColumn type="contact" color="light">
+        <LeftColumnTitle>{translation.menu.contacts}</LeftColumnTitle>
+      </LeftColumn>
+      <ContactForm />
     </MainElement>
   )
 }

@@ -11,7 +11,7 @@ export const Table = styled.ul`
   margin: 0 auto;
   max-width: 620px;
 
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 489px) {
     column-gap: 0;
     grid-template-columns: 200px;
     grid-template-rows: repeat(6, 40px);
@@ -58,7 +58,7 @@ export const TableExperience = styled(Table)`
   gap: 50px;
   max-width: 683px;
 
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 489px) {
     grid-template-columns: 13px 180px;
     max-width: 213px;
     gap: 20px;
@@ -72,7 +72,7 @@ export const TableExperience = styled(Table)`
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     grid-template-columns: 13px 180px 220px;
     max-width: 453px;
     gap: 20px;
@@ -92,7 +92,7 @@ export const TableEducation = styled(Table)`
   gap: 50px;
   max-width: 683px;
 
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 489px) {
     grid-template-columns: 13px 180px;
     max-width: 213px;
     gap: 20px;
@@ -106,7 +106,7 @@ export const TableEducation = styled(Table)`
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     grid-template-columns: 13px 180px 220px;
     max-width: 453px;
     gap: 20px;
@@ -161,7 +161,7 @@ export const TableTitle = styled.h2`
   font-size: 20px;
   width: 90%;
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
     font-size: 18px;
   }
 `

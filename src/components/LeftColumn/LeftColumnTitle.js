@@ -7,13 +7,13 @@ const Title = styled.h2`
   max-width: 200px;
   text-align: end;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
     margin: 90px auto 30px auto;
     text-align: start;
     max-width: 90%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    font-size: 20px;
   }
 `
 

@@ -3,6 +3,7 @@ import RightColumn from './RightColumn/RightColumn'
 import { useContext } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 import styled from 'styled-components'
+import { v4 as uuidv4 } from 'uuid'
 
 const Title = styled.h1`
   @keyframes appearance {
@@ -46,7 +47,7 @@ const Title = styled.h1`
     margin-top: 40px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     font-size: 40px;
     max-width: 500px;
     margin: 0;
@@ -87,7 +88,7 @@ const Description = styled.p`
     font-size: 18px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     font-size: 18px;
     margin: 30px 0;
     text-align: center;
@@ -104,7 +105,7 @@ const Contacts = styled.ul`
   max-width: 820px;
   text-align: start;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
     min-height: 250px;
@@ -112,7 +113,7 @@ const Contacts = styled.ul`
     margin-top: 40px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     max-width: 450px;
   }
 
@@ -139,6 +140,7 @@ const ContactTitle = styled.h2`
 `
 
 const Text = styled.p`
+  color: ${(props) => props.theme.colors.textColorDark};
   margin: 0;
   text-align: center;
   font-size: 18px;
@@ -148,7 +150,7 @@ const Text = styled.p`
     font-size: 16px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     font-size: 14px;
   }
 `
@@ -176,24 +178,18 @@ export default function Lead(props) {
       <Description>Junior Frontend Developer</Description>
       <Social type="lead" />
       <Contacts>
-        <li>
-          <ContactTitle>{translation.location_title}</ContactTitle>
-          <Text>{translation.location}</Text>
-        </li>
-        <li>
-          <ContactTitle>Telegram</ContactTitle>
-          <Text>
-            <Link href="https://t.me/solnishshka">@solnishshka</Link>
-          </Text>
-        </li>
-        <li>
-          <ContactTitle>Email</ContactTitle>
-          <Text>
-            <Link href="mailto:testsolnishshka@yandex.ru">
-              testsolnishshka@yandex.ru
-            </Link>
-          </Text>
-        </li>
+        {translation.contacts.map((item) => (
+          <li key={uuidv4()}>
+            <ContactTitle>{item.title}</ContactTitle>
+            <Text>
+              {item.href ? (
+                <Link href={item.href}>{item.value}</Link>
+              ) : (
+                item.value
+              )}
+            </Text>
+          </li>
+        ))}
       </Contacts>
     </RightColumn>
   )

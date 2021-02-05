@@ -13,7 +13,7 @@ export const Menu = styled.ul`
 
 const MainMenu = styled(Menu)`
   ${(props) => props.isPopupMenu && 'display:none;'}
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     ${(props) =>
       props.isMain &&
       `flex-direction: column;
@@ -30,14 +30,14 @@ const MainMenu = styled(Menu)`
 const MenuItem = styled.li`
   margin-left: 18px;
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 30px;
-    margin-left: 0;
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     margin-left: 10px;
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+    margin-left: 0;
   }
 `
 const MenuLink = styled.a`
@@ -51,12 +51,16 @@ const MenuLink = styled.a`
     color: ${(props) => props.theme.colors.yellow};
   }
 
-  @media screen and (max-width: 1024px) {
-    font-size: 12px;
-  }
-
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
   }
 `
 
@@ -83,6 +87,9 @@ export default function HeaderMenu(props) {
         </MenuItem>
         <MenuItem>
           <MenuLink href="#portfolio">{translation.menu.portfolio}</MenuLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuLink href="#contact">{translation.menu.contacts}</MenuLink>
         </MenuItem>
       </MainMenu>
     </nav>
