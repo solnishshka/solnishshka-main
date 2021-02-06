@@ -64,14 +64,19 @@ const Input = styled.input`
   opacity: 0.8;
   margin-bottom: 10px;
   height: 40px;
-  border: 0;
-  border-bottom: 1px solid ${(props) => props.theme.colors.lineColor};
-  background-color: ${(props) => props.theme.colors.formColor};
-  color: ${(props) => props.theme.colors.textColorDark};
+  ${(props) =>
+    !props.isValidate
+      ? `border: none; border-bottom: 1px solid ${props.theme.colors.lineColor};`
+      : `border: 1px solid ${
+          props.invalid
+            ? props.theme.colors.errorColor
+            : props.theme.colors.validColor
+        }; border-radius: 0.25rem;`}
+  background-color: ${(props) => props.theme.colors.bgColor};
+  color: ${(props) => props.theme.colors.textColorLight};
   transition: opacity 0.5s linear;
-  outline: 2px solid
-    ${(props) => props.isSubmitted && (props.invalid ? 'red;' : 'green;')}
-    @media screen and (max-width: 1024px) {
+
+  @media screen and (max-width: 1024px) {
     height: 40px;
   }
   @media screen and (max-width: 768px) {
@@ -79,7 +84,7 @@ const Input = styled.input`
   }
 
   &:focus {
-    ${(props) => !props.isSubmitted && 'outline: none;'}
+    outline: none;
     opacity: 1;
   }
 
@@ -93,18 +98,22 @@ const TextArea = styled.textarea`
   max-width: 350px;
   width: 100%;
   height: 100%;
-  border: 1px solid ${(props) => props.theme.colors.lineColor};
-  border-radius: 5px;
-  background-color: ${(props) => props.theme.colors.formColor};
-  color: ${(props) => props.theme.colors.textColorDark};
+  border: 1px solid
+    ${(props) =>
+      !props.isValidate
+        ? props.theme.colors.lineColor
+        : props.invalid
+        ? props.theme.colors.errorColor
+        : props.theme.colors.validColor};
+  border-radius: 0.25rem;
+  background-color: ${(props) => props.theme.colors.bgColor};
+  color: ${(props) => props.theme.colors.textColorLight};
   transition: opacity 0.5s linear;
   resize: none;
   margin-bottom: 7px;
-  outline: 2px solid ${(props) =>
-    props.isSubmitted && (props.invalid ? 'red;' : 'green;')}
 
   &:focus {
-    ${(props) => !props.isSubmitted && 'outline: none;'}
+    outline: none;
     opacity: 1;
   }
 
@@ -170,7 +179,7 @@ const Spinner = styled.i`
 `
 
 const Span = styled.span`
-  color: #ff0000;
+  color: ${(props) => props.theme.colors.errorColor};
   font-size: 12px;
   line-height: 1.21;
   margin-bottom: 5px;
@@ -196,7 +205,6 @@ export default function Form(props) {
   })
 
   const [isSubmit, setIsSubmit] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSending, setIsSending] = useState(false)
   const [isValidationStart, setIsValidationStart] = useState({
     name: false,
@@ -335,12 +343,7 @@ export default function Form(props) {
     )
   } else {
     return (
-      <FormElement
-        name="contact-me"
-        onSubmit={handleSubmit}
-        onChange={() => setIsSubmitted(true)}
-        noValidate
-      >
+      <FormElement name="contact-me" onSubmit={handleSubmit} noValidate>
         <Container>
           <Fieldset>
             <Input
@@ -350,7 +353,7 @@ export default function Form(props) {
               type="text"
               placeholder={translation.form.name}
               invalid={nameInvalid}
-              isSubmitted={isSubmitted}
+              isValidate={isValidationStart.name}
             ></Input>
             {errors.name.required && (
               <Span>Поле обязательно для заполнения</Span>
@@ -371,7 +374,7 @@ export default function Form(props) {
               type="email"
               placeholder="Email"
               invalid={emailInvalid}
-              isSubmitted={isSubmitted}
+              isValidate={isValidationStart.email}
             ></Input>
             {errors.email.required && (
               <Span>Поле обязательно для заполнения</Span>
@@ -388,7 +391,7 @@ export default function Form(props) {
               type="text"
               placeholder={translation.form.message}
               invalid={messageInvalid}
-              isSubmitted={isSubmitted}
+              isValidate={isValidationStart.message}
             ></TextArea>
             {errors.message.required && (
               <Span>Поле обязательно для заполнения</Span>

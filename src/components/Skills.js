@@ -59,7 +59,7 @@ export default function Skills(props) {
       </TableAdvanced>
       <Title>SOFT SKILLS</Title>
       <Table>
-        {translation.skills.advanced.map((skill) => (
+        {translation.skills.soft.map((skill) => (
           <li key={uuidv4()}>
             <RightColumnText>{skill}</RightColumnText>
           </li>

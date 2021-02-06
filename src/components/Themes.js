@@ -12,7 +12,9 @@ export const lightTheme = {
     bgColorLight: '#fbfbfb',
     yellow: '#f8bb10',
     lineColor: 'rgba(93, 93, 93, 0.3)',
-    formColor: '#fff'
+    formColor: '#fff',
+    errorColor: '#dc3545',
+    validColor: '#198754'
   },
 }
 
@@ -27,6 +29,8 @@ export const darkTheme = {
     bgColorSuperDark: '#212121',
     yellow: '#f8bb10',
     lineColor: 'rgba(93, 93, 93, 0.3)',
-    formColor: '#EEEEEE'
+    formColor: '#EEEEEE',
+    errorColor: '#dc3545',
+    validColor: '#198754'
   },
 }
