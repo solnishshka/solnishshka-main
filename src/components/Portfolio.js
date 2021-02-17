@@ -45,7 +45,7 @@ const Image = styled.img`
   object-fit: cover;
   object-position: top;
   transition: transform 1s linear, opacity 1s linear;
-  opacity: 0.6;
+  opacity: 0.5;
 
   &:hover {
     transform: scale(1.2);

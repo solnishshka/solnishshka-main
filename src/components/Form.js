@@ -3,7 +3,7 @@ import { Button } from './Button'
 import { useContext, useState, useCallback, useEffect } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 import api from '../utils/api'
-import validators from '../utils/validators'
+import { validators } from '../utils/validator'
 
 const FormElement = styled.form`
   max-width: 670px;
@@ -26,6 +26,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   min-height: 100px;
+  width: 100%;
 
   @media screen and (max-width: 490px) {
     flex-direction: column;
@@ -51,7 +52,6 @@ const Fieldset = styled.fieldset`
 
 const FieldsetTypeTA = styled(Fieldset)`
   width: 45%;
-  max-height: 160px;
 
   @media screen and (max-width: 490px) {
     width: 100%;
@@ -94,6 +94,7 @@ const Input = styled.input`
 `
 
 const TextArea = styled.textarea`
+  min-height: 140px;
   opacity: 0.8;
   max-width: 350px;
   width: 100%;
@@ -110,7 +111,7 @@ const TextArea = styled.textarea`
   color: ${(props) => props.theme.colors.textColorLight};
   transition: opacity 0.5s linear;
   resize: none;
-  margin-bottom: 7px;
+  padding: 0;
 
   &:focus {
     outline: none;
@@ -129,7 +130,7 @@ const TextArea = styled.textarea`
   }
 
   @media screen and (max-width: 490px) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `
 
@@ -330,15 +331,15 @@ export default function Form(props) {
   } else if (isSubmit) {
     return (
       <StatusContainer>
-        <SuccesMessage>Сообщение успешно отправлено!</SuccesMessage>
-        <ReturnButton onClick={handleReturn}>Закрыть</ReturnButton>
+        <SuccesMessage>{translation.form.submitMessage.success}</SuccesMessage>
+        <ReturnButton onClick={handleReturn}>{translation.form.submitMessage.close}</ReturnButton>
       </StatusContainer>
     )
   } else if (isError) {
     return (
       <StatusContainer>
-        <SuccesMessage>Что-то пошло не так. Попробуйте ещё раз!</SuccesMessage>
-        <ReturnButton onClick={handleReturn}>Закрыть</ReturnButton>
+        <SuccesMessage>{translation.form.submitMessage.error}</SuccesMessage>
+        <ReturnButton onClick={handleReturn}>{translation.form.submitMessage.close}</ReturnButton>
       </StatusContainer>
     )
   } else {
@@ -356,15 +357,14 @@ export default function Form(props) {
               isValidate={isValidationStart.name}
             ></Input>
             {errors.name.required && (
-              <Span>Поле обязательно для заполнения</Span>
+              <Span>{translation.form.error.required}</Span>
             )}
             {errors.name.minLength && (
-              <Span>Длина сообщения должна быть более 2 символов</Span>
+              <Span>{translation.form.error.minLength_2}</Span>
             )}
             {errors.name.containSymbols && (
               <Span>
-                Имя должно содержать только буквы русского или английского
-                алфавита
+                {translation.form.error.containSymbols}
               </Span>
             )}
             <Input
@@ -377,10 +377,10 @@ export default function Form(props) {
               isValidate={isValidationStart.email}
             ></Input>
             {errors.email.required && (
-              <Span>Поле обязательно для заполнения</Span>
+              <Span>{translation.form.error.required}</Span>
             )}
             {errors.email.invalidEmail && (
-              <Span>Некорректный адрес электронной почты</Span>
+              <Span>{translation.form.error.invalidEmail}</Span>
             )}
           </Fieldset>
           <FieldsetTypeTA>
@@ -394,10 +394,10 @@ export default function Form(props) {
               isValidate={isValidationStart.message}
             ></TextArea>
             {errors.message.required && (
-              <Span>Поле обязательно для заполнения</Span>
+              <Span>{translation.form.error.required}</Span>
             )}
             {errors.message.minLength && (
-              <Span>Длина сообщения должна быть более 30 символов</Span>
+              <Span>{translation.form.error.minLength_30}</Span>
             )}
           </FieldsetTypeTA>
         </Container>

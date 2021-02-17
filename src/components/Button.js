@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { TranslationContext } from '../contexts/translationContext'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 
 export const Button = styled.button`
   border: none;

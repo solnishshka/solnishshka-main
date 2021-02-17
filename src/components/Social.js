@@ -1,3 +1,4 @@
+import React from 'react'
 import cn from 'classnames'
 import styled from 'styled-components'
 
@@ -39,21 +40,21 @@ export default function Social(props) {
           className={cn('fa', 'fa-envelope', {
             'fa-lg': props.type === 'lead',
           })}
-        ></i>
+        />
       </Link>
       <Link href="https://t.me/solnishshka" target="_blank" rel="noreferrer">
         <i
           className={cn('fa', 'fa-telegram', {
             'fa-lg': props.type === 'lead',
           })}
-        ></i>
+        />
       </Link>
       <Link href="https://wa.me/79166952756" target="_blank" rel="noreferrer">
         <i
           className={cn('fa', 'fa-whatsapp', {
             'fa-lg': props.type === 'lead',
           })}
-        ></i>
+        />
       </Link>
       <Link
         className="social__link"
@@ -63,7 +64,7 @@ export default function Social(props) {
       >
         <i
           className={cn('fa', 'fa-github', { 'fa-lg': props.type === 'lead' })}
-        ></i>
+        />
       </Link>
       <Link
         href="https://www.facebook.com/anastasiya.stratilatova"
@@ -74,12 +75,12 @@ export default function Social(props) {
           className={cn('fa', 'fa-facebook', {
             'fa-lg': props.type === 'lead',
           })}
-        ></i>
+        />
       </Link>
       <Link href="https://vk.com/anti_tella" target="_blank" rel="noreferrer">
         <i
           className={cn('fa', 'fa-vk', { 'fa-lg': props.type === 'lead' })}
-        ></i>
+        />
       </Link>
     </Container>
   )

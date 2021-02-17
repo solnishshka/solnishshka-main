@@ -2,7 +2,10 @@ import Header from './Header/Header'
 import Footer from './Footer'
 import Main from './Main'
 import { useState } from 'react'
-import { TranslationContext, translations } from '../contexts/translationContext'
+import {
+  TranslationContext,
+  translations,
+} from '../contexts/translationContext'
 import { lightTheme, darkTheme } from './Themes'
 import styled, { ThemeProvider } from 'styled-components'
 
@@ -19,8 +22,7 @@ const Content = styled.div`
   width: 100%;
   background-color: ${(props) => props.theme.colors.bgColor};
   color: ${(props) => props.theme.colors.textColorLight};
-  margin: 0 auto;
-  margin-top: 85px;
+  margin: 85px auto 0 auto;
 `
 
 function App() {

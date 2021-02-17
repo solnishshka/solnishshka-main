@@ -10,7 +10,7 @@ import LeftColumnTitle from './LeftColumn/LeftColumnTitle'
 import ContactForm from './ContactForm'
 import DownloadButton from './Button'
 import avatar from '../images/portrait.png'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 
 const MainElement = styled.main`

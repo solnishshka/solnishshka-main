@@ -133,7 +133,19 @@ export const translations = {
       name: 'Name',
       message: 'Message',
       submitButton: 'Send',
-    },
+      error: {
+        required: 'Required input',
+        invalidEmail: 'Invalid email',
+        minLength_2: 'The field must be at least 2 characters long',
+        minLength_30: 'The field must be at least 30 characters long',
+        containSymbols: 'The name must contain only Russian or English letters the alphabet'
+      },
+      submitMessage: {
+        success: 'Message has been sent successfully!',
+        error: 'Something went wrong. Try again!',
+        close: 'Close'
+      }
+    }
   },
   ru: {
     name: 'Анастасия',
@@ -265,6 +277,18 @@ export const translations = {
       name: 'Имя',
       message: 'Сообщение',
       submitButton: 'Отправить',
+      error: {
+        required: 'Поле обязательно для заполнения',
+        invalidEmail: 'Некорректный адрес электронной почты',
+        minLength_2: 'Длина сообщения должна быть более 2 символов',
+        minLength_30: 'Длина сообщения должна быть более 30 символов',
+        containSymbols: 'Имя должно содержать только буквы русского или английского алфавита'
+      },
+      submitMessage: {
+        success: 'Сообщение успешно отправлено!',
+        error: 'Что-то пошло не так. Попробуйте ещё раз!',
+        close: 'Закрыть'
+      }
     },
   },
 }
