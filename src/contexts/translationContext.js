@@ -138,14 +138,15 @@ export const translations = {
         invalidEmail: 'Invalid email',
         minLength_2: 'The field must be at least 2 characters long',
         minLength_30: 'The field must be at least 30 characters long',
-        containSymbols: 'The name must contain only Russian or English letters the alphabet'
+        containSymbols:
+          'The name must contain only Russian or English letters the alphabet',
       },
       submitMessage: {
         success: 'Message has been sent successfully!',
         error: 'Something went wrong. Try again!',
-        close: 'Close'
-      }
-    }
+        close: 'Close',
+      },
+    },
   },
   ru: {
     name: 'Анастасия',
@@ -177,17 +178,19 @@ export const translations = {
       },
     ],
     about: [
-      'Привет! Меня зовут Анастасия. Я начинающий frontend-разработчик. На данный момент обучаюсь в Яндекс.Практикуме по специальности web-разработка. Хорошо верстаю, знаю нативный JS, имею опыт работы с React (React Context, React Router), умею работать с Api, понимаю и умею применять принципы ООП.',
+      'Привет! Меня зовут Анастасия. Я начинающий frontend-разработчик. На данный момент закончила обучение в Яндекс.Практикуме по специальности web-разработка и работаю Junior фронтенд-разработчиком. Хорошо верстаю, знаю нативный JS, Typescript, имею опыт работы с React (React Context, React Router, React Query), умею работать с Api, понимаю и умею применять принципы ООП.',
       'Знакома с анализом сложности алгоритмов, а также самостоятельно изучаю алгоритмы и их применение в реальных задачах. Стараюсь постоянно обучаться, расти как специалист и изучать новые технологии.',
       'Любовь к вебу случилась со мной во время работы в поддержке web-сервиса, а разработка мне близка еще с университета, но хотелось попробовать себя в разных сферах.',
-      'Хочу расти и развиваться во frontend-разработке с позиции младшего разработчика, присоединившись к команде единомышленников, которые также как и я относятся к работе с большим рвение и страстью.',
+      'Хочу расти и развиваться во frontend-разработке',
       'В свободное время люблю заниматься танцами, готовить интересные и красивые блюда, путешествовать, рисовать, играть в настольные и компьютерные игры (MMORPG). Без вредных привычек, имею двоих детей и мужа, который разделяет мою любовь к IT-сфере.',
     ],
     skills: {
       hard: [
         'JavaScript',
+        'Typescript',
         'React',
         'HTML5',
+        'SCSS',
         'CSS',
         'ООП',
         'Node.js',
@@ -195,6 +198,8 @@ export const translations = {
         'Git',
         'REST Api',
         'БЭМ',
+        'Docker',
+        'Nginx',
       ],
       advanced: [
         'Scrum',
@@ -282,13 +287,14 @@ export const translations = {
         invalidEmail: 'Некорректный адрес электронной почты',
         minLength_2: 'Длина сообщения должна быть более 2 символов',
         minLength_30: 'Длина сообщения должна быть более 30 символов',
-        containSymbols: 'Имя должно содержать только буквы русского или английского алфавита'
+        containSymbols:
+          'Имя должно содержать только буквы русского или английского алфавита',
       },
       submitMessage: {
         success: 'Сообщение успешно отправлено!',
         error: 'Что-то пошло не так. Попробуйте ещё раз!',
-        close: 'Закрыть'
-      }
+        close: 'Закрыть',
+      },
     },
   },
 }
