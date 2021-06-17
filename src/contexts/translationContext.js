@@ -13,6 +13,7 @@ export const translations = {
       experience: 'EXPERIENCE',
       education: 'EDUCATION',
       portfolio: 'PORTFOLIO',
+      certificates: 'CERTIFICATES',
       contacts: 'CONTACT ME',
     },
     contacts: [
@@ -42,15 +43,19 @@ export const translations = {
     skills: {
       hard: [
         'JavaScript',
+        'TypeScript',
         'React',
         'HTML5',
+        'SCSS',
         'CSS',
-        'OOP',
+        'ООП',
         'Node.js',
         'Webpack',
         'Git',
         'REST Api',
-        'BEM',
+        'БЭМ',
+        'Docker',
+        'Nginx',
       ],
       advanced: [
         'Scrum',
@@ -71,12 +76,17 @@ export const translations = {
     },
     experience: [
       {
-        title: 'Yandex.Praktikum',
-        job: 'Web-developer',
-        date: '2020 - Present',
+        title: 'VPA.Group',
+        job: 'Junior frontend developer',
+        date: '2021 - 2021',
         description: [
-          'Layout (adaptive layout using fluxbox and gridlayout) and development of web applications using native JavaScript, as well as using the React JS framework. In projects, I used the principles of OOP, asynchronous requests and their processing, and React Context to raise the global state. I also developed a backend with a REST Api for one of the Express projects in conjunction with MongoDB.',
-          'Technology stack: HTML5, CSS (flex, grid, media queries), JavaScript, React JS, Asynchronous operations, OOP, REST Api, WebPack, BEM, Node basics.Js, Express, Mongo DB.',
+          'Functional responsibilities:',
+          '- development of the client side of web applications',
+          '- working with the API',
+          '- participation in the development of the web application server side (NodeJS)',
+          '- writing autotests',
+          '- layout of layouts from Figma',
+          'Technology stack: Typescript, MobX, Redux, React, SCSS, Gitlab, Docker, Jest, ssr, react-query, HTML5, CSS, Figma.',
         ],
       },
       {
@@ -109,7 +119,7 @@ export const translations = {
       {
         title: 'Yandex.Praktikum',
         job: 'Web-developer',
-        date: '2020 - Present',
+        date: '2020 - 2021',
         description: [
           'As part of the training in the Workshop, I learned how to make high-quality layout (adaptive layout using various technologies), mastered the principles of BEM, studied development in native JavaScript (interaction with the Api, asynchronous operations, OPP, function closures, etc.), and also mastered React (React Context, React Router).',
           'I am currently learning the basics of the backend for a frontend developer-Node.JS, Express, creating a REST Api, as well as the principles of working with Mongo DB.',
@@ -158,6 +168,7 @@ export const translations = {
       experience: 'ОПЫТ РАБОТЫ',
       education: 'ОБУЧЕНИЕ',
       portfolio: 'ПОРТФОЛИО',
+      certificates: 'СЕРТИФИКАТЫ',
       contacts: 'НАПИШИТЕ МНЕ',
     },
     contacts: [
@@ -178,16 +189,15 @@ export const translations = {
       },
     ],
     about: [
-      'Привет! Меня зовут Анастасия. Я начинающий frontend-разработчик. На данный момент закончила обучение в Яндекс.Практикуме по специальности web-разработка и работаю Junior фронтенд-разработчиком. Хорошо верстаю, знаю нативный JS, Typescript, имею опыт работы с React (React Context, React Router, React Query), умею работать с Api, понимаю и умею применять принципы ООП.',
+      'Привет! Меня зовут Анастасия. На данный момент я работаю Junior фронтенд-разработчиком в компании VPA.Group. Стек технологий, которыми я владею: JavaScript (ES6), Typescript, ReactJS, ФП/ООП, Mobx, Redux, NodeJS, разработка REST Api, Nginx, Docker (развертывание бека), SCSS, HTML5, CSS, БЭМ, написание тестов Jest.',
       'Знакома с анализом сложности алгоритмов, а также самостоятельно изучаю алгоритмы и их применение в реальных задачах. Стараюсь постоянно обучаться, расти как специалист и изучать новые технологии.',
-      'Любовь к вебу случилась со мной во время работы в поддержке web-сервиса, а разработка мне близка еще с университета, но хотелось попробовать себя в разных сферах.',
       'Хочу расти и развиваться во frontend-разработке',
       'В свободное время люблю заниматься танцами, готовить интересные и красивые блюда, путешествовать, рисовать, играть в настольные и компьютерные игры (MMORPG). Без вредных привычек, имею двоих детей и мужа, который разделяет мою любовь к IT-сфере.',
     ],
     skills: {
       hard: [
         'JavaScript',
-        'Typescript',
+        'TypeScript',
         'React',
         'HTML5',
         'SCSS',
@@ -220,12 +230,17 @@ export const translations = {
     },
     experience: [
       {
-        title: 'Яндекс.Практикум',
-        job: 'Веб-разработчик',
-        date: '2020 - Настоящее время',
+        title: 'VPA.Group',
+        job: 'Junior frontend developer',
+        date: '2021 - Настоящее время',
         description: [
-          'Верстка (адаптивная по макету с применением flexbox и grid-layot) и разработка веб-приложений с применением нативного JavaScript, а также с использованием фреймворка React JS. В проектах использовала принципы ООП, асинхронные запросы и их обработку, React Context для поднятия глобального стейта. Также разрабатывала бекенд с REST Api для одного из проектов на Express в связке с Mongo DB.',
-          'Стек технологий: HTML5, CSS (flex, grid, медиа-запросы), JavaScript, React JS, асинхронные операции, ООП, REST Api, WebPack, БЭМ, основы Node.Js, Express, Mongo DB.',
+          'Функциональные обязанности:',
+          '- разработка клиентской части веб-приложений',
+          '- работа с API',
+          '- участие в разработке серверной части веб-приложений (NodeJS)',
+          '- написание автотестов',
+          '- верстка макетов из Figma',
+          'Стек технологий: Typescript, MobX, Redux, React, SCSS, Gitlab, Docker, Jest, ssr, react-query, HTML5, CSS, Figma.',
         ],
       },
       {
@@ -258,7 +273,7 @@ export const translations = {
       {
         title: 'Яндекс.Практикум',
         job: 'Веб-разработчик',
-        date: '2020 - Настоящее время',
+        date: '2020 - 2021',
         description: [
           'В рамках обучения в Практикуме научилась качественно верстать (адаптивная верстка с применением различных технологий), освоила принципы БЭМ, обучалась разработке на нативном JavaScript (взаимодействие с Api, асинхронные операции, ОПП, замыкания функций и тп), а также освоила React (React Context, React Router).',
           'В настоящее время изучаю основы бекенда для фронтед-разработчика - Node.JS, Express, создание REST Api, а также принципы работы с Mongo DB.',

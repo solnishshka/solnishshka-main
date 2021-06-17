@@ -40,9 +40,9 @@ export default function Skills(props) {
         {translation.skills.hard.map((skill) => (
           <li key={uuidv4()}>
             <RightColumnText>{skill}</RightColumnText>
-            {skill.match(/JavaScript|React|HTML5|CSS|OOP|ООП|BEM|БЭМ/) && <ProgressBar100 />}
+            {skill.match(/JavaScript|TypeScript|React|HTML5|CSS|OOP|ООП|BEM|БЭМ/) && <ProgressBar100 />}
             {skill.match(/Git|REST Api/) && <ProgressBar75 />}
-            {skill.match(/Node.js|Webpack/) && <ProgressBar50 />}
+            {skill.match(/Node.js|Webpack|Docker|Nginx/) && <ProgressBar50 />}
           </li>
         ))}
       </TableHard>

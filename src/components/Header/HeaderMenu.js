@@ -89,6 +89,9 @@ export default function HeaderMenu(props) {
           <MenuLink href="#portfolio">{translation.menu.portfolio}</MenuLink>
         </MenuItem>
         <MenuItem>
+          <MenuLink href="#certificates">{translation.menu.certificates}</MenuLink>
+        </MenuItem>
+        <MenuItem>
           <MenuLink href="#contact">{translation.menu.contacts}</MenuLink>
         </MenuItem>
       </MainMenu>

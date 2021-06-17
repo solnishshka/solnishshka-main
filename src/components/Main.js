@@ -8,8 +8,9 @@ import styled from 'styled-components'
 import LeftColumn from './LeftColumn/LeftColumn'
 import LeftColumnTitle from './LeftColumn/LeftColumnTitle'
 import ContactForm from './ContactForm'
+import Certificates from './Certificates';
 import DownloadButton from './Button'
-import avatar from '../images/portrait.png'
+import avatar from '../images/avatar.jpg'
 import React, { useContext } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 
@@ -80,7 +81,11 @@ export default function Main(props) {
         <LeftColumnTitle>{translation.menu.portfolio}</LeftColumnTitle>
       </LeftColumn>
       <Portfolio />
-      <LeftColumn type="contact" color="light">
+      <LeftColumn type="certificates" color="light">
+        <LeftColumnTitle>{translation.menu.certificates}</LeftColumnTitle>
+      </LeftColumn>
+      <Certificates/>
+      <LeftColumn type="contact" color="dark">
         <LeftColumnTitle>{translation.menu.contacts}</LeftColumnTitle>
       </LeftColumn>
       <ContactForm />
