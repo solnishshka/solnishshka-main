@@ -175,7 +175,7 @@ export default function Lead(props) {
         {translation.name}
         <Span>{translation.surname}</Span>
       </Title>
-      <Description>Junior Frontend Developer</Description>
+      <Description>Frontend Developer</Description>
       <Social type="lead" />
       <Contacts>
         {translation.contacts.map((item) => (

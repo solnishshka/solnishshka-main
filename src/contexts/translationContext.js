@@ -34,7 +34,7 @@ export const translations = {
       },
     ],
     about: [
-      'Hello! I am junior frontend developer. I am currently studying at Yandex.Praktikum training in the specialty web-development. I am a good typesetter, I know native JS, I have experience with React (React Context, React Router), I know how to work with the Api, I understand and know how to apply the principles of OOP.',
+      'Hello! I am frontend developer. I am a good typesetter, I know native JS, I have experience with React (React Context, React Router), I know how to work with the Api, I understand and know how to apply the principles of OOP.',
       'I am familiar with the analysis of the complexity of algorithms, and also independently study algorithms and their application in real problems. I try to constantly learn, grow as a specialist and learn new technologies.',
       'The love for the web happened to me while working in the support of a web service, and I have been close to development since university, but I wanted to try myself in different areas.',
       'I want to grow and develop in frontend development from the position of a junior developer, joining a team of like-minded people who, like me, treat the work with great zeal and passion.',
@@ -75,6 +75,19 @@ export const translations = {
       ],
     },
     experience: [
+      {
+        title: 'SOFTAILOR',
+        job: 'Junior developer',
+        date: '2021 - Present',
+        description: [
+          'Functional responsibilities:',
+          '- development of the client side of web applications',
+          '- working with the API, GraphQl',
+          '- configure webpack, eslint and others',
+          '- layout of layouts from Figma',
+          'Technology stack: Typescript, MobX, Redux, React, SCSS, Gitlab, Docker, Jest, ssr, react-query, HTML5, CSS, Figma.',
+        ],
+      },
       {
         title: 'VPA.Group',
         job: 'Junior frontend developer',
@@ -189,7 +202,7 @@ export const translations = {
       },
     ],
     about: [
-      'Привет! Меня зовут Анастасия. На данный момент я работаю Junior фронтенд-разработчиком в компании VPA.Group. Стек технологий, которыми я владею: JavaScript (ES6), Typescript, ReactJS, ФП/ООП, Mobx, Redux, NodeJS, разработка REST Api, Nginx, Docker (развертывание бека), SCSS, HTML5, CSS, БЭМ, написание тестов Jest.',
+      'Привет! Меня зовут Анастасия. На данный момент я работаю фронтенд-разработчиком в компании SOFTAILOR. Стек технологий, которыми я владею: JavaScript (ES6), Typescript, ReactJS, ФП/ООП, Mobx, Redux, NodeJS, разработка REST Api, Nginx, Docker (развертывание бека), SCSS, HTML5, CSS, БЭМ, написание тестов Jest.',
       'Знакома с анализом сложности алгоритмов, а также самостоятельно изучаю алгоритмы и их применение в реальных задачах. Стараюсь постоянно обучаться, расти как специалист и изучать новые технологии.',
       'Хочу расти и развиваться во frontend-разработке',
       'В свободное время люблю заниматься танцами, готовить интересные и красивые блюда, путешествовать, рисовать, играть в настольные и компьютерные игры (MMORPG). Без вредных привычек, имею двоих детей и мужа, который разделяет мою любовь к IT-сфере.',
@@ -230,9 +243,22 @@ export const translations = {
     },
     experience: [
       {
+        title: 'SOFTAILOR',
+        job: 'Младший программист',
+        date: '2021 - Настоящее время',
+        description: [
+          'Функциональные обязанности:',
+          '- разработка клиентской части веб-приложений',
+          '- работа с REST API, GraphQl',
+          '- верстка макетов из Figma',
+          '- настройка конфигураций webpack, настройка EsLint',
+          'Стек технологий: Typescript, MobX, React, GraphQl, SCSS, Gitlab, HTML5, CSS, Figma.',
+        ],
+      },
+      {
         title: 'VPA.Group',
         job: 'Junior frontend developer',
-        date: '2021 - Настоящее время',
+        date: '2021',
         description: [
           'Функциональные обязанности:',
           '- разработка клиентской части веб-приложений',
