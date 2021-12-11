@@ -23,10 +23,6 @@ const Span = styled.span`
   color: ${props => props.theme.colors.yellow};
 `
 
-
-// change 1 commit
-
-
 export default function Logo(props) {
   return (
     <Link type={props.type} href="#">

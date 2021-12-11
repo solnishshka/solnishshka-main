@@ -13,8 +13,6 @@ const AppContainer = styled.div`
   background-color: ${(props) => props.theme.colors.bgColor};
 `
 
-// change 2 commit
-
 const Content = styled.div`
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
