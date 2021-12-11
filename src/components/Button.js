@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { TranslationContext } from '../contexts/translationContext'
 import React, { useContext } from 'react'
 
+// 1 commit
+
 export const Button = styled.button`
   border: none;
   cursor: pointer;
