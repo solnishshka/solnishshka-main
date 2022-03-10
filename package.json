@@ -42,7 +42,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sonarqube-scanner": "^2.8.1"
+  },
   "main": "index.js",
   "repository": "https://github.com/solnishshka/solnishshka-main.git",
   "author": "solnishshka <testsolnishshka@yandex.ru>",

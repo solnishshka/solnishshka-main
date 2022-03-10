@@ -1,6 +1,8 @@
-import img_1 from '../images/image-1.png'
-import img_2 from '../images/image-2.png'
-import img_4 from '../images/image_4.png'
+import img1 from '../images/image-1.png'
+import img2 from '../images/image-2.png'
+import img4 from '../images/image_4.png'
+import img5 from '../images/img_5.png'
+import img6 from '../images/img_6.png'
 import { useContext } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 import RightColumn from './RightColumn/RightColumn'
@@ -43,7 +45,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: left top;
   transition: transform 1s linear, opacity 1s linear;
   opacity: 0.5;
 
@@ -90,25 +92,46 @@ export default function Portfolio(props) {
           {translation.portfolio}
         </Link>
         <LinkImage
+          href="https://testing-landing-bank.web.app/parent"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={img6}
+            alt="Превью лэндинга мобильного банковского приложения"
+          />
+        </LinkImage>
+
+        <LinkImage
           href="https://solnishshka.github.io/russian-travel/index.html"
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={img_4} alt="Превью проекта Путешествия по России" />
+          <Image src={img4} alt="Превью проекта Путешествия по России" />
         </LinkImage>
         <LinkImage
           href="https://solnishshka.github.io/react-mesto-auth/"
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={img_2} alt="Превью проекта Место" />
+          <Image src={img2} alt="Превью проекта Место" />
         </LinkImage>
         <LinkImage
           href="https://solnishshka.github.io/how-to-learn/"
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={img_1} alt="Превью проекта Научиться учиться" />
+          <Image src={img1} alt="Превью проекта Научиться учиться" />
+        </LinkImage>
+        <LinkImage
+          href="https://compare-starships.web.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            src={img5}
+            alt="Превью проекта тестового задания CompareStarships"
+          />
         </LinkImage>
       </TablePortfolio>
     </RightColumn>
