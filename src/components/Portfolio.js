@@ -3,11 +3,13 @@ import img2 from '../images/image-2.png'
 import img4 from '../images/image_4.png'
 import img5 from '../images/img_5.png'
 import img6 from '../images/img_6.png'
-import { useContext } from 'react'
+import img7 from '../images/img_7.png'
+import { useContext, useState } from 'react'
 import { TranslationContext } from '../contexts/translationContext'
 import RightColumn from './RightColumn/RightColumn'
 import { TablePortfolio } from './RightColumn/RightColumnTable'
 import styled from 'styled-components'
+import {Button} from './Button'
 
 const Link = styled.a`
   text-decoration: none;
@@ -76,7 +78,37 @@ const Image = styled.img`
   }
 `
 
+const StyledButton = styled(Button)`
+display: block;
+margin: 0 auto;
+margin-top: 50px;
+background-color: ${(props) => props.theme.colors.yellow};
+width: 140px;
+height: 35px;
+color: ${(props) => props.theme.colors.buttonTextColor};
+${(props) =>
+  props.isLead &&
+  'margin-top: 60px; margin-bottom: 200px;width: 180px; height: 50px;'}
+
+@media screen and (max-width: 768px) {
+  ${(props) =>
+    props.isLead &&
+    `margin-top: 40px; margin-bottom: 50px; width: 130px; height: 35px;`}
+  ${(props) =>
+    props.isHeader &&
+    `position: fixed; bottom: 60px; right: 15px; width: 70px; height: 70px; border-radius: 40px;`}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  width: 110px;
+  height: 25px;
+  ${(props) =>
+    props.isLead &&
+    `margin-top: 30px; margin-bottom: 170px; width: 130px; height: 35px;`}
+}
+`
+
 export default function Portfolio(props) {
+  const [viewAll, setViewAll] = useState(false)
   const translation = useContext(TranslationContext)
 
   return (
@@ -101,7 +133,13 @@ export default function Portfolio(props) {
             alt="Превью лэндинга мобильного банковского приложения"
           />
         </LinkImage>
-
+        <LinkImage
+          href="https://coleman-services.ru"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image src={img7} alt="Превью проекта Coleman Services" />
+        </LinkImage>
         <LinkImage
           href="https://solnishshka.github.io/russian-travel/index.html"
           target="_blank"
@@ -109,31 +147,36 @@ export default function Portfolio(props) {
         >
           <Image src={img4} alt="Превью проекта Путешествия по России" />
         </LinkImage>
-        <LinkImage
-          href="https://solnishshka.github.io/react-mesto-auth/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image src={img2} alt="Превью проекта Место" />
-        </LinkImage>
-        <LinkImage
-          href="https://solnishshka.github.io/how-to-learn/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image src={img1} alt="Превью проекта Научиться учиться" />
-        </LinkImage>
-        <LinkImage
-          href="https://compare-starships.web.app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image
-            src={img5}
-            alt="Превью проекта тестового задания CompareStarships"
-          />
-        </LinkImage>
+        {
+         viewAll && <>
+            <LinkImage
+              href="https://solnishshka.github.io/react-mesto-auth/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={img2} alt="Превью проекта Место" />
+            </LinkImage>
+            <LinkImage
+              href="https://solnishshka.github.io/how-to-learn/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={img1} alt="Превью проекта Научиться учиться" />
+            </LinkImage>
+            <LinkImage
+              href="https://compare-starships.web.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src={img5}
+                alt="Превью проекта тестового задания CompareStarships"
+              />
+            </LinkImage>
+          </>
+        } 
       </TablePortfolio>
+      <StyledButton onClick={() => setViewAll(!viewAll)}>{viewAll ? "Скрыть" : "Показать все"}</StyledButton>
     </RightColumn>
   )
 }
